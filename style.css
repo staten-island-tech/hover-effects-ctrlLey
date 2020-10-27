@@ -1,1 +1,82 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+/* #ffd5cd
+#efbbcf
+#c3aed6
+#8675a9 
+
+colorhunt.co is cool for hexadecimal palettes :) materialpalette.com bad :)
+also these colors look pretty different w/o night light smh
+*/
+/* #ffd5cd
+#efbbcf
+#c3aed6
+#8675a9 
+
+colorhunt.co is cool for hexadecimal palettes :) materialpalette.com bad :)
+also these colors look pretty different w/o night light smh
+*/
+.button,
+.button:link,
+.button:visited {
+  text-transform: capitalize;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  margin: 2rem auto;
+  font-size: 3rem;
+  border-radius: 5rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.button-1 {
+  background-color: #ffd5cd;
+  color: #555;
+}
+
+.button-2 {
+  background-color: #efbbcf;
+  color: #555;
+}
+
+.button-3 {
+  background-color: #c3aed6;
+  color: #555;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fcefee;
+}
+
+.header {
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: underline;
+  margin: 2rem;
+}
+
+.container {
+  width: 80vw;
+  margin: 2rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1rem;
+  font-size: 1.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,1 +1,29 @@
 @import "variables";
+
+.button,
+.button:link,
+.button:visited {
+  text-transform: capitalize;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  margin: 2rem auto;
+  font-size: 3rem;
+  border-radius: 5rem;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.button-1 {
+  background-color: $button-1;
+  color: #555;
+}
+
+.button-2 {
+  background-color: $button-2;
+  color: #555;
+}
+
+.button-3 {
+  background-color: $button-3;
+  color: #555;
+}
