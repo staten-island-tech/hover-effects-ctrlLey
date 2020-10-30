@@ -1,0 +1,38 @@
+.pastel {
+  height: 30rem;
+  position: relative;
+  margin: 5rem auto;
+}
+
+.pastel-picture {
+  height: 30rem;
+  clip-path: polygon(75% 0%, 93% 50%, 75% 100%, 0% 100%, 13% 50%, 0% 0%);
+  transition: all 0.7s;
+}
+
+.pastel-header {
+  font-size: 5rem;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 1px 1px black;
+  transition: all 0.7s;
+  text-transform: uppercase;
+}
+
+.pastel:hover .pastel-picture {
+  filter: blur(0.5rem);
+}
+
+.pastel:hover .pastel-header {
+  opacity: 1;
+  top: 40%;
+}
+
+.pastel:active {
+  transform: scale(1.1);
+  transition: all 0.7s;
+}

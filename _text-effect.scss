@@ -1,0 +1,22 @@
+@import "variables";
+
+.text-effect {
+  margin: 8rem auto 3rem auto;
+  color: $text-color-1;
+  font-size: 8rem;
+  transition: all 0.7s;
+  border-bottom: 0.5rem solid #888;
+}
+
+.text-effect:hover {
+  /*   transform: ; */
+  letter-spacing: 1.5rem;
+}
+
+.text-effect-bottom {
+  text-decoration: none;
+}
+.text-effect-bottom:hover {
+  color: $button-3;
+  transform: scale(1.2);
+}

@@ -28,6 +28,20 @@ also these colors look pretty different w/o night light smh
   position: relative;
 }
 
+.button:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-box-shadow: 0 10px 0.5rem rgba(5, 5, 5, 0.3);
+          box-shadow: 0 10px 0.5rem rgba(5, 5, 5, 0.3);
+}
+
+.button:active {
+  -webkit-transform: scaleX(1.05) scaleY(1.1);
+          transform: scaleX(1.05) scaleY(1.1);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
 .button-1 {
   background-color: #ffd5cd;
   color: #555;
@@ -43,6 +57,141 @@ also these colors look pretty different w/o night light smh
   color: #555;
 }
 
+/* #ffd5cd
+#efbbcf
+#c3aed6
+#8675a9 
+
+colorhunt.co is cool for hexadecimal palettes :) materialpalette.com bad :)
+also these colors look pretty different w/o night light smh
+*/
+.text-effect {
+  margin: 8rem auto 3rem auto;
+  color: #8675a9;
+  font-size: 8rem;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+  border-bottom: 0.5rem solid #888;
+}
+
+.text-effect:hover {
+  /*   transform: ; */
+  letter-spacing: 1.5rem;
+}
+
+.text-effect-bottom {
+  text-decoration: none;
+}
+
+.text-effect-bottom:hover {
+  color: #c3aed6;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.pastel {
+  height: 30rem;
+  position: relative;
+  margin: 5rem auto;
+}
+
+.pastel-picture {
+  height: 30rem;
+  -webkit-clip-path: polygon(75% 0%, 93% 50%, 75% 100%, 0% 100%, 13% 50%, 0% 0%);
+          clip-path: polygon(75% 0%, 93% 50%, 75% 100%, 0% 100%, 13% 50%, 0% 0%);
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+.pastel-header {
+  font-size: 5rem;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 1px 1px black;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+  text-transform: uppercase;
+}
+
+.pastel:hover .pastel-picture {
+  -webkit-filter: blur(0.5rem);
+          filter: blur(0.5rem);
+}
+
+.pastel:hover .pastel-header {
+  opacity: 1;
+  top: 40%;
+}
+
+.pastel:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+.pastel-parent {
+  width: 80rem;
+  height: 80rem;
+}
+
+.pastel-gallery {
+  margin: 3rem;
+  position: relative;
+}
+
+.photo {
+  position: absolute;
+  height: 30rem;
+  -webkit-box-shadow: 0 1.5rem 1rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1.5rem 1rem rgba(0, 0, 0, 0.4);
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+.photo:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0 3rem 1rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 3rem 1rem rgba(0, 0, 0, 0.4);
+  outline: 0.5rem solid #555;
+  z-index: 2;
+}
+
+.pastel-gallery:hover .photo:not(:hover) {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  opacity: 0.3;
+}
+
+.photo-1 {
+  top: 15rem;
+  left: -5rem;
+}
+
+.photo-2 {
+  top: 3rem;
+  right: 0;
+  height: 20rem;
+  border-radius: 50%;
+}
+
+.photo-2:hover {
+  border-radius: 0;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.photo-3 {
+  top: 40rem;
+  right: 2rem;
+}
+
 html,
 body {
   font-size: 62.5%;
@@ -55,14 +204,15 @@ body {
 
 .header {
   text-align: center;
-  font-size: 2rem;
-  text-decoration: underline;
+  font-size: 3rem;
+  color: #8675a9;
+  border-bottom: 0.5rem solid #888;
   margin: 2rem;
 }
 
 .container {
   width: 80vw;
-  margin: 2rem auto;
+  margin: 5rem auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,5 +228,12 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+
+.paragraph {
+  font-size: 2.5rem;
+  line-height: 1.6em;
+  color: #555;
+  width: 80%;
 }
 /*# sourceMappingURL=style.css.map */

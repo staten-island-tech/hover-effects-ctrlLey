@@ -1,6 +1,8 @@
 @import "variables";
 @import "buttons";
-
+@import "text-effect";
+@import "pastel";
+@import "pastel-gallery";
 html,
 body {
   font-size: 62.5%;
@@ -12,14 +14,15 @@ body {
 
 .header {
   text-align: center;
-  font-size: 2rem;
-  text-decoration: underline;
+  font-size: 3rem;
+  color: $text-color-1;
+  border-bottom: 0.5rem solid #888;
   margin: 2rem;
 }
 
 .container {
   width: 80vw;
-  margin: 2rem auto;
+  margin: 5rem auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -27,4 +30,11 @@ body {
   font-size: 1.5rem;
   align-items: center;
   text-align: center;
+}
+
+.paragraph {
+  font-size: 2.5rem;
+  line-height: 1.6em;
+  color: #555;
+  width: 80%;
 }

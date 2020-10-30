@@ -13,6 +13,16 @@
   position: relative;
 }
 
+.button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 0.5rem rgba(5, 5, 5, 0.3);
+}
+
+.button:active {
+  transform: scaleX(1.05) scaleY(1.1);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
 .button-1 {
   background-color: $button-1;
   color: #555;
